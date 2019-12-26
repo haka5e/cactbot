@@ -35,7 +35,7 @@
           de: 'Geteiltes Leid: ' + name,
           fr: 'Dérobade: ' + name,
           ja: 'シャーク: ' + name,
-          cn: '退避: ' + name,          
+          cn: '退避: ' + name,
           ko: '기피: ' + name,
         };
       },
