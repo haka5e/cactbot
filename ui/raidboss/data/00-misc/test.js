@@ -48,18 +48,21 @@
       regex: /(Angry Dummy)/,
       regexDe: /(Wütender Dummy)/,
       regexCn: /愤怒的木人/,
+      regexKo: /화난나무인형/,
       beforeSeconds: 2,
       infoText: function(data, matches) {
         return {
           en: 'Stack for ' + matches[1],
           de: 'Sammeln für ' + matches[1],
           cn: '木人处集合',
+          ko: '나무인형으로',
         };
       },
       tts: {
         en: 'Stack',
         de: 'Sammeln',
         cn: '集合',
+        ko: '집합',
       },
     },
   ],
@@ -122,20 +125,20 @@
     {
       locale: 'ko',
       replaceText: {
-        'Final Sting': '终极针',
-        'Almagest': '至高无上',
-        'Angry Dummy': '愤怒的木人',
-        'Long Castbar': '长时间咏唱',
-        'Dummy Stands Still': '木人8动了',
-        'Super Tankbuster': '超级无敌转圈死刑',
-        'Death To': '嗝屁攻击：',
-        'Death': '嗝屁',
-        'Engage': '战斗开始',
+        'Final Sting': '최후의 일격',
+        'Almagest': '알마게스트',
+        'Angry Dummy': '화난나무인형',
+        'Long Castbar': '긴 캐스팅바',
+        'Dummy Stands Still': '더미가아직두서잇다',
+        'Super Tankbuster': '짱아픈탱크버스터',
+        'Death To': '사형선고：',
+        'Death': '죽음',
+        'Engage': '전투시작',
       },
       replaceSync: {
-        'You bid farewell to the striking dummy': '.*向木人告别',
-        'You bow courteously to the striking dummy': '.*恭敬地对木人行礼',
-        'Engage!': '战斗开始！',
+        'You bid farewell to the striking dummy': '.*가 나무인형에게 작별 인사를 합니다.',
+        'You bow courteously to the striking dummy': '.*가 나무인형에게 공손하게 인사합니다.',
+        'Engage!': '전투 시작！',
       },
     },
   ],
@@ -146,6 +149,7 @@
       regexDe: /:Du stupst die Trainingspuppe an/,
       regexFr: /:Vous touchez légèrement le mannequin d'entraînement du doigt/,
       regexCn: /:.*用手指戳向木人/,
+      regexKo: /:.*가 나무인형을 쿡쿡 찌릅니다./,
       preRun: function(data) {
         data.pokes = (data.pokes || 0) + 1;
       },
@@ -155,6 +159,7 @@
           de: 'stups #' + data.pokes,
           fr: 'Touché #' + data.pokes,
           cn: '戳 #' + data.pokes,
+          ko: '쿡쿡 #' + data.pokes,
         };
       },
     },
@@ -164,23 +169,27 @@
       regexDe: /:Du willst wahren Kampfgeist in der Trainingspuppe entfachen/,
       regexFr: /:Vous vous motivez devant le mannequin d'entraînement/,
       regexCn: /:.*激励木人/,
+      regexKo: /:.*가 나무인형에게 힘을 불어넣습니다./,
       alertText: {
         en: 'PSYCH!!!',
         de: 'AUF GEHTS!!!',
         fr: 'MOTIVATION !!!',
         cn: '激励！！',
+        ko: '힘!!',
       },
       tts: {
         en: 'psych',
         de: 'auf gehts',
         fr: 'Motivation',
         cn: '激励',
+        ko: '힘내',
       },
       groupTTS: {
         en: 'group psych',
         de: 'Gruppen auf gehts',
         fr: 'group motivation',
         cn: '组激励',
+        ko: '그룹힘내',
       },
     },
     {
@@ -189,24 +198,28 @@
       regexDe: /:Du lachst herzlich mit der Trainingspuppe/,
       regexFr: /:Vous vous esclaffez devant le mannequin d'entraînement/,
       regexCn: /:.*看着木人高声大笑/,
+      regexKo: /:.*가 나무인형을 보고 폭소를 터뜨립니다./,
       suppressSeconds: 5,
       alarmText: {
         en: 'hahahahaha',
         de: 'hahahahaha',
         fr: 'Mouahahaha',
         cn: '2333333333',
+        ko: 'ㅎㅎㅎㅎㅎㅎ',
       },
       tts: {
         en: 'hahahahaha',
         de: 'hahahahaha',
         fr: 'Haha mort de rire',
         cn: '哈哈哈哈哈哈',
+        ko: '하하하하하하',
       },
       groupTTS: {
         en: 'group laugh',
         de: 'Gruppenlache',
         fr: 'group motivation',
         cn: '组哈哈',
+        ko: '그룹하하',
       },
     },
     {
@@ -215,6 +228,7 @@
       regexDe: /:Du klatschst begeistert Beifall für die Trainingspuppe/,
       regexFr: /:Vous applaudissez le mannequin d'entraînement/,
       regexCn: /:.*向木人送上掌声/,
+      regexKo: /:.*가 나무인형에게 박수를 보냅니다./,
       sound: '../../resources/sounds/WeakAuras/Applause.ogg',
       soundVolume: 0.3,
       tts: {
@@ -222,6 +236,7 @@
         de: 'klatschen',
         fr: 'Bravo, vive la France',
         cn: '鼓掌',
+        ko: '짝짝',
       },
     },
     {
@@ -234,6 +249,7 @@
           en: 'Language: ' + data.lang,
           de: 'Sprache: ' + data.lang,
           cn: '语言: ' + data.lang,
+          ko: '언어: ' + data.lang,
         };
       },
     },
