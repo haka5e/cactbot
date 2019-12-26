@@ -1,7 +1,7 @@
 'use strict';
 
 [{
-  zoneRegex: /^(Middle La Noscea|中拉诺西亚)$/,
+  zoneRegex: /^(Middle La Noscea|中拉诺西亚|중부 라노시아)$/,
   timelineFile: 'test.txt',
   // timeline here is additions to the timeline.  They can
   // be strings, or arrays of strings, or functions that
@@ -102,6 +102,25 @@
     },
     {
       locale: 'cn',
+      replaceText: {
+        'Final Sting': '终极针',
+        'Almagest': '至高无上',
+        'Angry Dummy': '愤怒的木人',
+        'Long Castbar': '长时间咏唱',
+        'Dummy Stands Still': '木人8动了',
+        'Super Tankbuster': '超级无敌转圈死刑',
+        'Death To': '嗝屁攻击：',
+        'Death': '嗝屁',
+        'Engage': '战斗开始',
+      },
+      replaceSync: {
+        'You bid farewell to the striking dummy': '.*向木人告别',
+        'You bow courteously to the striking dummy': '.*恭敬地对木人行礼',
+        'Engage!': '战斗开始！',
+      },
+    },
+    {
+      locale: 'ko',
       replaceText: {
         'Final Sting': '终极针',
         'Almagest': '至高无上',
